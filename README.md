@@ -12,16 +12,16 @@ Compose and Material 3.
 
 ## Download
 
-**ForgeMedia 1.2.58** — versionCode 59
+**ForgeMedia 1.2.59** — versionCode 60
 
-- [**Download `ForgeMedia.apk`**](https://github.com/Tigstar82/ForgeMedia_Release/releases/download/v1.2.58/ForgeMedia.apk)
+- [**Download `ForgeMedia.apk`**](https://github.com/Tigstar82/ForgeMedia_Release/releases/download/v1.2.59/ForgeMedia.apk)
 - [All releases](https://github.com/Tigstar82/ForgeMedia_Release/releases)
 
 | | |
 |---|---|
 | File | `ForgeMedia.apk` |
-| Size | 14008736 bytes |
-| SHA-256 | `e5cef7aad9acac70119f390dd64ab4b23582a19e70e8d84486ace680b536982c` |
+| Size | 14025120 bytes |
+| SHA-256 | `8902a7a0ea09178e2bc7dba1564dbcc28415f91c86cf1a4448c97b96535352a7` |
 | Requires | Android 8.0 (API 26) or newer |
 
 The same APK covers phones, tablets and Android TV: both the standard and the
