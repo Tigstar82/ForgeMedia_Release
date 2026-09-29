@@ -1,0 +1,301 @@
+{
+  "schema_version": 1,
+  "manifest_version": 3,
+  "key_id": "forge-main-2026",
+  "providers": [],
+  "embeds": [
+    {
+      "id": "vidlink",
+      "label": "VidLink",
+      "movie_template": "https://vidlink.pro/movie/{id}",
+      "tv_template": "https://vidlink.pro/tv/{id}/{s}/{e}",
+      "capabilities": [
+        "movie",
+        "tv"
+      ],
+      "enabled": true,
+      "sniff": true,
+      "reason": "verified live",
+      "version": "1.0"
+    },
+    {
+      "id": "vidsrc",
+      "label": "VidSrc",
+      "movie_template": "https://vidsrc.to/embed/movie/{id}",
+      "tv_template": "https://vidsrc.to/embed/tv/{id}/{s}/{e}",
+      "capabilities": [
+        "movie",
+        "tv"
+      ],
+      "enabled": true,
+      "sniff": true,
+      "reason": "verified live",
+      "version": "1.0"
+    },
+    {
+      "id": "vidsrc-pm",
+      "label": "VidSrc PM",
+      "movie_template": "https://vidsrc.pm/embed/movie/{id}",
+      "tv_template": "https://vidsrc.pm/embed/tv/{id}/{s}/{e}",
+      "capabilities": [
+        "movie",
+        "tv"
+      ],
+      "enabled": true,
+      "sniff": false,
+      "reason": "verified live",
+      "version": "1.0"
+    },
+    {
+      "id": "2embed-skin",
+      "label": "2Embed",
+      "movie_template": "https://www.2embed.skin/embed/{id}",
+      "tv_template": "https://www.2embed.skin/embedtv/{id}?s={s}&e={e}",
+      "capabilities": [
+        "movie",
+        "tv"
+      ],
+      "enabled": true,
+      "sniff": false,
+      "reason": "verified live",
+      "version": "1.0"
+    },
+    {
+      "id": "autoembed-co",
+      "label": "AutoEmbed",
+      "movie_template": "https://autoembed.co/movie/tmdb/{id}",
+      "tv_template": "https://autoembed.co/tv/tmdb/{id}-{s}-{e}",
+      "capabilities": [
+        "movie",
+        "tv"
+      ],
+      "enabled": true,
+      "sniff": false,
+      "reason": "verified live",
+      "version": "1.0"
+    },
+    {
+      "id": "moviesapi-to",
+      "label": "MoviesAPI",
+      "movie_template": "https://moviesapi.to/movie/{id}",
+      "tv_template": "https://moviesapi.to/tv/{id}-{s}-{e}",
+      "capabilities": [
+        "movie",
+        "tv"
+      ],
+      "enabled": true,
+      "sniff": false,
+      "reason": "verified live",
+      "version": "1.0"
+    },
+    {
+      "id": "smashy",
+      "label": "SmashyStream",
+      "movie_template": "https://player.smashystream.com/playere.php?tmdb={id}",
+      "tv_template": "https://player.smashystream.com/playere.php?tmdb={id}&season={s}&episode={e}",
+      "capabilities": [
+        "movie",
+        "tv"
+      ],
+      "enabled": false,
+      "sniff": false,
+      "reason": "connection timeout, host dead 2026-09",
+      "version": "1.0"
+    },
+    {
+      "id": "nontongo",
+      "label": "Nontongo",
+      "movie_template": "https://nontongo.win/embed/movie/{id}",
+      "tv_template": "https://nontongo.win/embed/tv/{id}/{s}/{e}",
+      "capabilities": [
+        "movie",
+        "tv"
+      ],
+      "enabled": true,
+      "sniff": false,
+      "reason": "verified live",
+      "version": "1.0"
+    },
+    {
+      "id": "primesrc",
+      "label": "PrimeSrc",
+      "movie_template": "https://primesrc.me/embed/movie?tmdb={id}",
+      "tv_template": "https://primesrc.me/embed/tv?tmdb={id}&season={s}&episode={e}",
+      "capabilities": [
+        "movie",
+        "tv"
+      ],
+      "enabled": true,
+      "sniff": false,
+      "reason": "verified live 2026-09, documented embed API",
+      "version": "1.0"
+    },
+    {
+      "id": "filmu",
+      "label": "FilmU",
+      "movie_template": "https://embed.filmu.in/movie/{id}",
+      "tv_template": "https://embed.filmu.in/tv/{id}/{s}/{e}",
+      "capabilities": [
+        "movie",
+        "tv"
+      ],
+      "enabled": true,
+      "sniff": false,
+      "reason": "verified live 2026-09",
+      "version": "1.0"
+    },
+    {
+      "id": "vsembed",
+      "label": "VsEmbed",
+      "movie_template": "https://vsembed.ru/embed/movie/{id}",
+      "tv_template": "https://vsembed.ru/embed/tv/{id}/{s}-{e}",
+      "capabilities": [
+        "movie",
+        "tv"
+      ],
+      "enabled": false,
+      "sniff": false,
+      "reason": "blank render in headless automation",
+      "version": "1.0"
+    },
+    {
+      "id": "videasy",
+      "label": "Videasy",
+      "movie_template": "https://player.videasy.to/movie/{id}",
+      "tv_template": "https://player.videasy.to/tv/{id}/{s}/{e}",
+      "capabilities": [
+        "movie",
+        "tv"
+      ],
+      "enabled": false,
+      "sniff": false,
+      "reason": "streams via encrypted API, nothing sniffable",
+      "version": "1.0"
+    },
+    {
+      "id": "vidfast",
+      "label": "VidFast",
+      "movie_template": "https://vidfast.vc/movie/{id}",
+      "tv_template": "https://vidfast.vc/tv/{id}/{s}/{e}",
+      "capabilities": [
+        "movie",
+        "tv"
+      ],
+      "enabled": false,
+      "sniff": false,
+      "reason": "Cloudflare challenge in automation",
+      "version": "1.0"
+    },
+    {
+      "id": "vidking",
+      "label": "VidKing",
+      "movie_template": "https://www.vidking.net/embed/movie/{id}",
+      "tv_template": "https://www.vidking.net/embed/tv/{id}/{s}/{e}",
+      "capabilities": [
+        "movie",
+        "tv"
+      ],
+      "enabled": true,
+      "sniff": false,
+      "reason": "registry adapter mirror",
+      "version": "1.0"
+    },
+    {
+      "id": "screenscape",
+      "label": "ScreenScape",
+      "movie_template": "https://screenscape.me/embed?tmdb={id}&type=movie",
+      "tv_template": "https://screenscape.me/embed?tmdb={id}&type=tv&s={s}&e={e}",
+      "capabilities": [
+        "movie",
+        "tv"
+      ],
+      "enabled": true,
+      "sniff": false,
+      "reason": "registry adapter mirror",
+      "version": "1.0"
+    },
+    {
+      "id": "toustream",
+      "label": "TouStream",
+      "movie_template": "https://toustream.xyz/tou/movies/{id}",
+      "tv_template": "https://toustream.xyz/tou/tv/{id}",
+      "capabilities": [
+        "movie",
+        "tv"
+      ],
+      "enabled": true,
+      "sniff": false,
+      "reason": "registry adapter mirror (tv has no season/episode segments)",
+      "version": "1.0"
+    },
+    {
+      "id": "rivestream",
+      "label": "RiveStream",
+      "movie_template": "https://rivestream.ru/embed?type=movie&id={id}",
+      "tv_template": "https://rivestream.ru/embed?type=tv&id={id}&season={s}&episode={e}",
+      "capabilities": [
+        "movie",
+        "tv"
+      ],
+      "enabled": true,
+      "sniff": false,
+      "reason": "registry adapter mirror",
+      "version": "1.0"
+    },
+    {
+      "id": "vidsync",
+      "label": "VidSync",
+      "movie_template": "https://vidsync.live/embed/movie/{id}",
+      "tv_template": "https://vidsync.live/embed/tv/{id}/{s}/{e}",
+      "capabilities": [
+        "movie",
+        "tv"
+      ],
+      "enabled": true,
+      "sniff": false,
+      "reason": "registry adapter mirror",
+      "version": "1.0"
+    },
+    {
+      "id": "vidlove",
+      "label": "VidLove",
+      "movie_template": "https://player.vidlove.cc/embed/movie/{id}",
+      "tv_template": "https://player.vidlove.cc/embed/tv/{id}/{s}/{e}",
+      "capabilities": [
+        "movie",
+        "tv"
+      ],
+      "enabled": true,
+      "sniff": false,
+      "reason": "verified MaxStream pattern",
+      "version": "1.0"
+    },
+    {
+      "id": "viduki",
+      "label": "Viduki",
+      "movie_template": "https://www.viduki.net/1/movie/{id}",
+      "tv_template": "https://www.viduki.net/1/tv/{id}/{s}/{e}",
+      "capabilities": [
+        "movie",
+        "tv"
+      ],
+      "enabled": true,
+      "sniff": false,
+      "reason": "verified MaxStream pattern (paths 1-4 consolidated to one host entry)",
+      "version": "1.0"
+    },
+    {
+      "id": "frembed",
+      "label": "Frembed",
+      "movie_template": "https://frembed.surf/embed/movie/{id}",
+      "tv_template": "",
+      "capabilities": [
+        "movie"
+      ],
+      "enabled": true,
+      "sniff": false,
+      "reason": "movie pattern verified live; TV path unverified",
+      "version": "1.0"
+    }
+  ]
+}
