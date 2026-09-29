@@ -68,13 +68,54 @@ device only.
 
 ## Updating an installed app
 
-**Providers → App updates → Check for updates**
+You no longer need to look. ForgeMedia checks its own releases twice a day and
+tells you when a new one is published, two ways:
+
+- **A notification**, if you allow notifications. It appears while the app is
+  closed; tapping it opens ForgeMedia. On Android 13 and later you are asked
+  once, from **Providers → App updates → Check for updates**.
+- **A prompt inside the app** on launch, which works even if you decline
+  notifications. It only checks for the version — nothing downloads unless
+  you press the button. **Not now** is remembered for that one version, so the
+  next release still asks you.
+
+**Providers → App updates** still shows the same information on demand, and
+**Download & install** starts the update immediately.
 
 A check costs two small JSON requests — the APK is never downloaded just to
 find out whether you're current. Before anything is installed, the download is
 verified for HTTPS on a GitHub host, declared size, SHA-256, package name, a
 `versionCode` that is not a downgrade, and a signing certificate in the
 installed app's lineage. Android then asks you to confirm.
+
+---
+
+## Recent changes
+
+**1.2.62**
+- Fixed the catalogue not following the media tab. Tapping **Movies** while
+  browsing TV shows used to leave the TV catalogue on screen under a
+  "Movies"-highlighted tab, silently and with no error.
+- Fixed the catalogue freezing partway through a scroll instead of loading
+  more as you reached the end.
+- Finishing the newest episode of a series that is still being made no longer
+  tries to play an episode that has not aired yet, which ended on a confusing
+  "no playable sources" message. It now says when the next episode airs.
+- Post-render playback error handling moved into a single tested policy, and
+  player state and stream errors are now visible in release builds.
+
+**1.2.61**
+- Watching one episode no longer marks a whole series as watched. A season now
+  reports what you actually watched (for example `3/7 watched`) instead of
+  treating the first episode as the whole season.
+- Removing a title from your watchlist no longer destroys its resume point.
+
+**1.2.63 – 1.2.64**
+- Added the update notification and the in-app prompt described above.
+- 1.2.64 announces an update as soon as it is detected rather than after the
+  whole download, so a slow connection no longer means you are never told.
+
+**1.2.65** is a verification build with no functional change from 1.2.64.
 
 ---
 
