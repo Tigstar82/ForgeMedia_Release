@@ -75,20 +75,6 @@
       "version": "1.0"
     },
     {
-      "id": "moviesapi-to",
-      "label": "MoviesAPI",
-      "movie_template": "https://moviesapi.to/movie/{id}",
-      "tv_template": "https://moviesapi.to/tv/{id}-{s}-{e}",
-      "capabilities": [
-        "movie",
-        "tv"
-      ],
-      "enabled": true,
-      "sniff": false,
-      "reason": "verified live",
-      "version": "1.0"
-    },
-    {
       "id": "smashy",
       "label": "SmashyStream",
       "movie_template": "https://player.smashystream.com/playere.php?tmdb={id}",
@@ -173,90 +159,6 @@
       "version": "1.0"
     },
     {
-      "id": "vidfast",
-      "label": "VidFast",
-      "movie_template": "https://vidfast.vc/movie/{id}",
-      "tv_template": "https://vidfast.vc/tv/{id}/{s}/{e}",
-      "capabilities": [
-        "movie",
-        "tv"
-      ],
-      "enabled": false,
-      "sniff": false,
-      "reason": "Cloudflare challenge in automation",
-      "version": "1.0"
-    },
-    {
-      "id": "vidking",
-      "label": "VidKing",
-      "movie_template": "https://www.vidking.net/embed/movie/{id}",
-      "tv_template": "https://www.vidking.net/embed/tv/{id}/{s}/{e}",
-      "capabilities": [
-        "movie",
-        "tv"
-      ],
-      "enabled": true,
-      "sniff": false,
-      "reason": "registry adapter mirror",
-      "version": "1.0"
-    },
-    {
-      "id": "screenscape",
-      "label": "ScreenScape",
-      "movie_template": "https://screenscape.me/embed?tmdb={id}&type=movie",
-      "tv_template": "https://screenscape.me/embed?tmdb={id}&type=tv&s={s}&e={e}",
-      "capabilities": [
-        "movie",
-        "tv"
-      ],
-      "enabled": true,
-      "sniff": false,
-      "reason": "registry adapter mirror",
-      "version": "1.0"
-    },
-    {
-      "id": "toustream",
-      "label": "TouStream",
-      "movie_template": "https://toustream.xyz/tou/movies/{id}",
-      "tv_template": "https://toustream.xyz/tou/tv/{id}",
-      "capabilities": [
-        "movie",
-        "tv"
-      ],
-      "enabled": true,
-      "sniff": false,
-      "reason": "registry adapter mirror (tv has no season/episode segments)",
-      "version": "1.0"
-    },
-    {
-      "id": "rivestream",
-      "label": "RiveStream",
-      "movie_template": "https://rivestream.ru/embed?type=movie&id={id}",
-      "tv_template": "https://rivestream.ru/embed?type=tv&id={id}&season={s}&episode={e}",
-      "capabilities": [
-        "movie",
-        "tv"
-      ],
-      "enabled": true,
-      "sniff": false,
-      "reason": "registry adapter mirror",
-      "version": "1.0"
-    },
-    {
-      "id": "vidsync",
-      "label": "VidSync",
-      "movie_template": "https://vidsync.live/embed/movie/{id}",
-      "tv_template": "https://vidsync.live/embed/tv/{id}/{s}/{e}",
-      "capabilities": [
-        "movie",
-        "tv"
-      ],
-      "enabled": true,
-      "sniff": false,
-      "reason": "registry adapter mirror",
-      "version": "1.0"
-    },
-    {
       "id": "vidlove",
       "label": "VidLove",
       "movie_template": "https://player.vidlove.cc/embed/movie/{id}",
@@ -298,5 +200,5 @@
       "version": "1.0"
     }
   ],
-  "signature": "2qRfrjhmt6vQU/Xm5Z1tGghQAc+14Mk5jTNy4uauFXvLM6m2nOD8kr9ThocWHNb6vkrYctXhbp9njOoGIbehAg=="
+  "signature": "0UWP1cI9Js7MjGlAelrT9dv4vzBFn9yQNgfPj7d1zSzVQjW3DXJCo+uIk42GQkUnCssABhxkwtTjiQf5lFh7DA=="
 }
