@@ -12,16 +12,16 @@ Compose and Material 3.
 
 ## Download
 
-**ForgeMedia 1.2.69** — versionCode 70
+**ForgeMedia 1.2.70** — versionCode 71
 
-- [**Download `ForgeMedia.apk`**](https://github.com/Tigstar82/ForgeMedia_Release/releases/download/v1.2.69/ForgeMedia.apk)
+- [**Download `ForgeMedia.apk`**](https://github.com/Tigstar82/ForgeMedia_Release/releases/download/v1.2.70/ForgeMedia.apk)
 - [All releases](https://github.com/Tigstar82/ForgeMedia_Release/releases)
 
 | | |
 |---|---|
 | File | `ForgeMedia.apk` |
 | Size | 13943210 bytes |
-| SHA-256 | `08ef1ac5c50dd0f68d87f2f5b9cd7ff33ee2bb8b968422732169d6f31901c499` |
+| SHA-256 | `263e8a834e2b9da3dcf667586e7770a8c8c0cb5bab0c16f3d92bb07ba4ada2e9` |
 | Requires | Android 8.0 (API 26) or newer |
 
 The same APK covers phones, tablets and Android TV: both the standard and the
@@ -91,6 +91,34 @@ installed app's lineage. Android then asks you to confirm.
 ---
 
 ## Recent changes
+
+**1.2.70**
+- Release engineering only — no behaviour change. The published APK, this
+  README and the SHA-256 below are now guaranteed to come from one and the
+  same build, and the source is checked out with the same line endings on every
+  machine, so a rebuilt APK no longer changes its own hash for that reason.
+
+**1.2.69**
+- Fixed the TV tab still showing movie posters after you switched to it. The
+  grid was the old Movies list with the new TV page appended — 117 items after
+  a single switch. Fresh loads now carry a generation, so a late response or a
+  cancelled load from the previous tab can no longer publish into the new one.
+
+**1.2.67 – 1.2.68**
+- Fixed signed provider manifests being rejected on **release** builds below
+  Android 13, which silently left those devices on the two-row emergency embed
+  table while reporting nothing. The bundled BouncyCastle provider was being
+  stripped of its Ed25519 algorithms; manifests are now also checked on launch
+  and by the background worker.
+- Fixed the in-app update refusing this app's own published release on some
+  devices with "APK signing key does not match this install". The check now
+  tries every route the platform offers and names the failure that actually
+  occurred instead of inventing one.
+
+**1.2.66**
+- Fixed the provider manifest URL fields rendering blank, and "Save & check now"
+  writing that blank back and clearing the URL you had configured — the app then
+  quietly fell back to its bundled providers with no error shown.
 
 **1.2.62**
 - Fixed the catalogue not following the media tab. Tapping **Movies** while
