@@ -12,16 +12,16 @@ Compose and Material 3.
 
 ## Download
 
-**ForgeMedia 1.2.71** — versionCode 72
+**ForgeMedia 1.2.72** — versionCode 73
 
-- [**Download `ForgeMedia.apk`**](https://github.com/Tigstar82/ForgeMedia_Release/releases/download/v1.2.71/ForgeMedia.apk)
+- [**Download `ForgeMedia.apk`**](https://github.com/Tigstar82/ForgeMedia_Release/releases/download/v1.2.72/ForgeMedia.apk)
 - [All releases](https://github.com/Tigstar82/ForgeMedia_Release/releases)
 
 | | |
 |---|---|
 | File | `ForgeMedia.apk` |
-| Size | 13943998 bytes |
-| SHA-256 | `ffa3fc05a870e03118804186609c768813b7a0bafa9098d0df713283ceba8450` |
+| Size | 13944086 bytes |
+| SHA-256 | `8f25a1da8b59e931069109e481664f176f6cd58412f034ba8bbeb214ddec7342` |
 | Requires | Android 8.0 (API 26) or newer |
 
 The same APK covers phones, tablets and Android TV: both the standard and the
@@ -91,6 +91,21 @@ installed app's lineage. Android then asks you to confirm.
 ---
 
 ## Recent changes
+
+**1.2.72**
+- **Picture-in-picture.** Press Home while a video is playing and it carries on
+  in a floating window instead of stopping, so you can read something, answer a
+  message or start another app without losing your place. Tap the window to come
+  back to exactly where you were. There is also a picture-in-picture button
+  beside the back arrow, for Android 8–11 and for when you would rather ask for
+  it than use the Home gesture.
+  - The window is shaped like the video actually is, rather than being forced
+    into a fixed 16:9 box.
+  - Swiping the window away stops playback, so the sound never continues with
+    nothing on screen.
+  - Sound still stops if another app takes audio focus, and the video still
+    pauses when you lock the screen.
+  - Android 8.0+ only. Phones and tablets — Android TV has no picture-in-picture.
 
 **1.2.71**
 - When no provider can supply a playable stream, the app now works through the
