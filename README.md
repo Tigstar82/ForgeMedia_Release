@@ -12,16 +12,16 @@ Compose and Material 3.
 
 ## Download
 
-**ForgeMedia 1.2.70** — versionCode 71
+**ForgeMedia 1.2.71** — versionCode 72
 
-- [**Download `ForgeMedia.apk`**](https://github.com/Tigstar82/ForgeMedia_Release/releases/download/v1.2.70/ForgeMedia.apk)
+- [**Download `ForgeMedia.apk`**](https://github.com/Tigstar82/ForgeMedia_Release/releases/download/v1.2.71/ForgeMedia.apk)
 - [All releases](https://github.com/Tigstar82/ForgeMedia_Release/releases)
 
 | | |
 |---|---|
 | File | `ForgeMedia.apk` |
-| Size | 13943210 bytes |
-| SHA-256 | `263e8a834e2b9da3dcf667586e7770a8c8c0cb5bab0c16f3d92bb07ba4ada2e9` |
+| Size | 13943998 bytes |
+| SHA-256 | `ffa3fc05a870e03118804186609c768813b7a0bafa9098d0df713283ceba8450` |
 | Requires | Android 8.0 (API 26) or newer |
 
 The same APK covers phones, tablets and Android TV: both the standard and the
@@ -91,6 +91,24 @@ installed app's lineage. Android then asks you to confirm.
 ---
 
 ## Recent changes
+
+**1.2.71**
+- When no provider can supply a playable stream, the app now works through the
+  embed list **by itself** instead of making you try each one by hand. It shows
+  what it is trying — "Trying 2Embed (3/17)" — skips past the ones that are
+  provably dead, pauses on one that has loaded but only needs you to tap play,
+  and stops at the first embed that actually plays. Once an embed has worked, it
+  is remembered for that title and tried first next time.
+- Fixed seeking doing nothing on some films, and resuming them from the start.
+  Certain direct `.mkv` sources silently discard every seek and restart from
+  zero. The app now notices when a source has thrown your seek away, tells you
+  which one, and moves to the next source automatically — and, critically, no
+  longer lets the broken source's position of ~0 overwrite the resume point you
+  had saved.
+- Release dates from TMDB no longer get shown as confident dates when the data
+  is malformed (a `2026-13-45` rendered as a released-on date), and opening a
+  title no longer waits on the release-dates request a second time after it has
+  already failed.
 
 **1.2.70**
 - Release engineering only — no behaviour change. The published APK, this
